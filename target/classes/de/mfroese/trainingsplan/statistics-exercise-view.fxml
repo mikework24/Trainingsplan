@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="380.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mfroese.trainingsplan.gui.StatisticsExerciseController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="38.0" styleClass="darkBg" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#openTrainingPlans" prefHeight="30.0" prefWidth="30.0" styleClass="tBlue" textOverrun="CLIP">
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="M12.25 2.25H9.332C9.332 1.008 8.285 0 7 0S4.668 1.008 4.668 2.25H1.75C.785 2.25 0 3.008 0 3.938v12.374C0 17.242.785 18 1.75 18h10.5c.965 0 1.75-.758 1.75-1.688V3.938c0-.93-.785-1.687-1.75-1.687zM3.5 14.906c-.484 0-.875-.375-.875-.844 0-.468.39-.843.875-.843.484 0 .875.375.875.844 0 .468-.39.843-.875.843zm0-3.375c-.484 0-.875-.375-.875-.844 0-.468.39-.843.875-.843.484 0 .875.375.875.844 0 .468-.39.843-.875.843zm0-3.375c-.484 0-.875-.375-.875-.844 0-.468.39-.843.875-.843.484 0 .875.375.875.843 0 .47-.39.844-.875.844zM7 1.406c.484 0 .875.375.875.844s-.39.844-.875.844c-.484 0-.875-.375-.875-.844s.39-.844.875-.844zm4.668 12.938a.288.288 0 0 1-.293.281h-5.25a.288.288 0 0 1-.293-.281v-.563c0-.156.133-.281.293-.281h5.25c.16 0 .293.125.293.281zm0-3.375a.288.288 0 0 1-.293.281h-5.25a.288.288 0 0 1-.293-.281v-.563c0-.156.133-.281.293-.281h5.25c.16 0 .293.125.293.281zm0-3.375a.288.288 0 0 1-.293.281h-5.25a.288.288 0 0 1-.293-.281V7.03c0-.156.133-.281.293-.281h5.25c.16 0 .293.125.293.281zm0 0" styleClass="text-white" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="tWhite" textOverrun="CLIP">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="M18.367 13.84H.633a.633.633 0 1 0 0 1.265H2.93v.262a.633.633 0 1 0 1.266 0v-.262h4.671v.262a.633.633 0 1 0 1.266 0v-.262h4.672v.262a.633.633 0 1 0 1.265 0v-.262h2.297a.633.633 0 1 0 0-1.266zM13.441 13.207h3.989a.423.423 0 0 0 .422-.426V3.633A.633.633 0 0 0 17.219 3h-3.567a.635.635 0 0 0-.632.633v9.148c0 .235.187.426.421.426zM7.504 13.207h3.992c.23 0 .422-.191.422-.426v-5.09a.633.633 0 0 0-.633-.632h-3.57a.633.633 0 0 0-.633.632v5.09c0 .235.191.426.422.426zM1.57 13.207H5.56a.423.423 0 0 0 .421-.426V4.957a.633.633 0 0 0-.632-.633H1.78a.63.63 0 0 0-.633.633v7.824c0 .235.188.426.422.426zm0 0" styleClass="text-blue" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#openFinishedWorkout" prefHeight="30.0" prefWidth="30.0" styleClass="tWhite" textOverrun="CLIP">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="M8.305 4.852 5.738.578A1.187 1.187 0 0 0 4.718 0H.595C.114 0-.168.54.109.934l4.13 5.898a7.682 7.682 0 0 1 4.066-1.98zM18.406 0h-4.125c-.418 0-.804.219-1.02.578l-2.566 4.274a7.682 7.682 0 0 1 4.067 1.98L18.89.934A.592.592 0 0 0 18.406 0zM9.5 5.938a6.533 6.533 0 0 0-6.531 6.53A6.533 6.533 0 0 0 9.5 19a6.533 6.533 0 0 0 6.531-6.531A6.533 6.533 0 0 0 9.5 5.938zm3.434 5.835-1.407 1.372.332 1.937a.426.426 0 0 1-.617.45L9.5 14.616l-1.742.914a.426.426 0 0 1-.617-.449l.332-1.937-1.407-1.372a.426.426 0 0 1 .235-.726l1.949-.285L9.117 9a.42.42 0 0 1 .383-.238.42.42 0 0 1 .383.238l.87 1.762 1.946.285c.348.05.489.48.235.726zm0 0" styleClass="text-white" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#openBodyData" prefHeight="30.0" prefWidth="30.0" styleClass="tWhite" textOverrun="CLIP">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="M16.031 1.188H2.97a1.78 1.78 0 0 0-1.781 1.78v13.063a1.78 1.78 0 0 0 1.78 1.782h13.063a1.78 1.78 0 0 0 1.782-1.782V2.97a1.78 1.78 0 0 0-1.782-1.781zm-.62 6.125-1.946 2.289c-.348.414-.961.488-1.399.171-.48-.343-1.457-.925-2.566-.925-1.11 0-2.086.582-2.566.925a1.037 1.037 0 0 1-1.399-.171L3.59 7.312a1.197 1.197 0 0 1 .015-1.562C4.31 4.96 6.29 3.121 9.5 3.121c3.21 0 5.191 1.84 5.895 2.629.39.445.398 1.11.015 1.563zm0 0" styleClass="text-white" />                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#openSettings" prefHeight="30.0" prefWidth="30.0" styleClass="tWhite" textOverrun="CLIP">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="m3.168 10.879-.793.46a.788.788 0 0 0-.29 1.079l1.177 2.043a.792.792 0 0 0 1.082.289l.8-.46a1.574 1.574 0 0 1 1.575 0l.015.007c.489.281.79.8.793 1.367v.961a.79.79 0 0 0 .79.793h2.374a.794.794 0 0 0 .793-.793v-.965c0-.562.301-1.082.79-1.363l.015-.008a1.567 1.567 0 0 1 1.57 0l.801.461c.38.219.86.09 1.078-.29l1.18-2.042a.788.788 0 0 0-.293-1.078l-.793-.461a1.573 1.573 0 0 1-.789-1.371v-.016c-.004-.566.3-1.09.789-1.37l.793-.462a.788.788 0 0 0 .29-1.078l-1.18-2.043a.792.792 0 0 0-1.083-.289l-.797.46a1.574 1.574 0 0 1-1.574 0l-.011-.007c-.489-.281-.79-.8-.79-1.367v-.961a.794.794 0 0 0-.793-.793H8.313a.794.794 0 0 0-.793.793v1.023a1.47 1.47 0 0 1-.735 1.274l-.12.07a1.472 1.472 0 0 1-1.47 0l-.847-.492a.792.792 0 0 0-1.082.29l-1.18 2.042a.788.788 0 0 0 .289 1.078l.793.461c.488.281.793.805.789 1.371v.016c.004.566-.3 1.09-.789 1.37zM9.5 7.125a2.374 2.374 0 1 1 0 4.75 2.374 2.374 0 1 1 0-4.75zm0 0" styleClass="text-white" />
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="40.0" styleClass="darkBg" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="tBlue" textOverrun="CLIP">
+                    <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <SVGPath content="M1.188 3.86a2.686 2.686 0 0 1 2.671-2.672h11.282a2.686 2.686 0 0 1 2.671 2.671v11.282a2.686 2.686 0 0 1-2.671 2.671H3.859a2.686 2.686 0 0 1-2.671-2.671zm2.671-.891a.895.895 0 0 0-.89.89v11.282c0 .492.398.89.89.89h11.282c.488 0 .89-.402.89-.89V3.859a.895.895 0 0 0-.89-.89zm0 0 M6.031 14.488a4.32 4.32 0 0 0 1.805.899c.062.02.105-.063.062-.106-1.421-1.355-.64-2.828-.062-3.488.414-.473 1-1.254.957-2.297 0-.105.105-.187.191-.125.809.418 1.36 1.336 1.508 2.086.235-.227.32-.582.32-.895 0-.105.126-.19.231-.105.766.688 2.082 3.027-.04 4.867-.042.043 0 .125.04.106a5.143 5.143 0 0 0 1.785-.86c3.465-2.672 1.211-7.414-.254-8.98-.191-.192-.531-.067-.531.207-.02.566-.191 1.191-.637 1.61-.34-1.423-1.472-3.036-3.086-3.829-.215-.105-.468.063-.449.293.043 1.942-1.223 3.18-2.328 4.79-.977 1.44-1.617 4.093.488 5.827zm0 0" styleClass="text-blue" />
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" styleClass="rBlue" text="ÜBUNGEN">
+                    <HBox.margin>
+                        <Insets left="16.0" right="8.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#openStatisticsWorkload" prefHeight="30.0" prefWidth="170.0" styleClass="rGray" text="WORKLOAD">
+                    <HBox.margin>
+                        <Insets left="8.0" right="16.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <opaqueInsets>
+                <Insets left="10.0" right="10.0" />
+            </opaqueInsets>
+        </HBox>
+        <VBox alignment="TOP_CENTER" prefHeight="30.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="98.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-white" text="ÜBUNGEN">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="108.0" prefHeight="500.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="128.0" />
+    </children>
+</AnchorPane>
